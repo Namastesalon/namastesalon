@@ -4,7 +4,7 @@
 
         function iframeFix(){
             $('iframe').wrap('<div class="fix-iframe" />');
-            $('.fix-iframe').prepend('<img src="/themes/ubytovani/img/bg_iframe.gif" />');
+            $('.fix-iframe').prepend('<img src="design/img/bg_iframe.gif" />');
         }
         iframeFix();
 

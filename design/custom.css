@@ -45,8 +45,8 @@ main[role='main'] .wrapper {
 	left: 0;
 	bottom: 60px;
 	margin: 0 auto;
-	width: calc(100% - 500px);
-	padding: 0 0 0 500px;
+	width: calc(100% - 540px);
+	padding: 0 0 0 540px;
 	right: 0;
 	}
 }
@@ -71,7 +71,7 @@ main[role='main'] .wrapper {
 
 
 header {
-    background: #290009 url("/design/img/namastesalon-radka-320.jpg") top center no-repeat;
+    background: #290009 url("/design/img/header-namaste.jpg") top center repeat;
     z-index: 1;
     background-size: 100%;
     min-height: 360px;
@@ -79,7 +79,7 @@ header {
 }
 @media only screen and (min-width: 321px) {
 	header {
-		background-image: url("/design/img/namastesalon-radka-600.jpg");
+		background-image: url("/design/img/header-namaste.jpg");
 		background-size: 600px;
 		min-height: 400px;
 	}
@@ -87,7 +87,7 @@ header {
 
 @media only screen and (min-width: 600px) {
 	header {
-		background-image: url("/design/img/namastesalon-radka-768.jpg");
+		background-image: url("/design/img/header-namaste.jpg");
 		background-size: 768px;
     	min-height: 520px;
 	}
@@ -95,7 +95,7 @@ header {
 
 @media only screen and (min-width: 768px) {
 	header {
-		background-image: url("/design/img/namastesalon-radka-930.jpg");
+		background-image: url("/design/img/header-namaste.jpg");
 		background-size: 930px;
     	min-height: 600px;
 	}
@@ -103,6 +103,10 @@ header {
 
 @media only screen and (min-width: 900px) {
 	header {
+        background-size: 1600px;
+        min-height: 525px;
+        background-position: top center;
+
 	}
 }
 
@@ -120,15 +124,27 @@ header .wrapper {
 
 .logo {
 	top: 1px;
-    width: 200px;
+    width: 350px;
     height: 50px;
     left: -10px;
     text-indent: 0;
+    text-align: right;
 }
-.logo a {    
+.logo a {
 	color: white;
-    width: 200px;
+    text-decoration: none;
+    width: 350px;
     height: 50px;
+}
+.logo svg {
+    width: 100%;
+    height: auto;
+    display: block;    
+}
+.logo span {
+    font-size: 21px;
+    vertical-align: top;
+    padding-right: 5px;
 }
 
 .wrapper {
@@ -252,6 +268,7 @@ nav#block-idweb-main-menu h2 {
     line-height: 25px;
     height: auto;
     padding: 10px 20px;
+
 }
 
 .main-menu ul#paragraph-menu li a:hover, 
@@ -273,16 +290,19 @@ background: #ffffff;
 
 @media only screen and (min-width: 1024px) {
     .main-menu ul#paragraph-menu li a {
-        background: none;
-        color: #ffffff;
-        padding: 5px 14px;
+        background: #ffffff;
         border: 1px solid #ffffff;
+        color: #8f0222;
+        padding: 5px 14px;
         border-radius: 5px;
     }
     .main-menu ul#paragraph-menu li a:hover, 
     .main-menu ul#paragraph-menu li a.is-active, 
     .main-menu ul#paragraph-menu li.ui-tabs-active a {
-        border-bottom: 1px solid #ffffff;
+        background: none;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        text-shadow: 0 0 2px #666;
     }
 }
 
